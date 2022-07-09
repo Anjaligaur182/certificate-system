@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+.container  {
+background-image: url("image.jpg");
+height: 100vh;
+width: 100vw;
+background-position: cover!important;
+background-repeat: no-repeat;
+}
+  
+  
+
+hr {
+  border: none;
+  border-top: 1px solid black;
+}
+
+h1,
+h2 {
+  padding: 20px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1em;
+  padding: 10px 20px;
+  background-color: wheat;
+  width: 50%;
+  margin: auto;
+  border-radius: 10px;
+}
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.main p {
+  text-align: justify;
+  padding: 10px 0;
+}
+
+.main span {
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 20px 0;
+}
+
+.dots {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  margin: 1em;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .box {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .box {
+    flex-direction: column;
+    width: 80%;
+    padding-top: 15px;
+  }
+}
+
+
+/* team section styling */
+.team {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  flex-wrap: wrap;
+  margin: 20px 10px;
+}
+.card {
+  padding: 10px;
+}
+
+.card h4,
+.card p {
+  width: 200px;
+  margin: 10px auto;
+}
